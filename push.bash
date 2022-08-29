@@ -1,5 +1,5 @@
 #!/bin/bash
-
+./ecr-login.bash
 docker tag fargate-study_server $ECR_URL/fargate-study:latest
 docker push $ECR_URL/fargate-study:latest
 
