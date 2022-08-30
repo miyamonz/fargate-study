@@ -23,6 +23,7 @@ export class CdkPipelineStack extends cdk.Stack {
         "npm run build",
         "npm run cdk synth",
       ],
+      primaryOutputDirectory: "cdk/cdk.out",
     }),
   });
 }
