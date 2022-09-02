@@ -23,7 +23,7 @@ export class CdkPipelineStack extends cdk.Stack {
   }
 
   pipeline = new CodePipeline(this, "Pipeline", {
-    synthCodeBuildDefaults: {
+    codeBuildDefaults: {
       partialBuildSpec: node16BuildSpec,
     },
     synth: new ShellStep("Synth", {
